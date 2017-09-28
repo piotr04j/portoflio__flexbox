@@ -1,0 +1,477 @@
+/* ----------------------------SASS---------------------/*
+$white: #fff
+$blue: #3624ea
+$font : Montserrat, Helvetica, sans-serif
+=size($width,$height)
+    width: $width
+    height: $height
+.button
+    display: block
+    margin-left: 50px
+    padding: 10px
+    font: 18px $font
+    border: 2px $white solid
+    cursor: pointer
+    
+.navLink
+    text-decoration: none
+    font: 700 18px/80px $font
+    color: $white
+    margin: 0 10px
+    cursor: pointer 
+    &:hover
+        color: #18f7ef
+    
+/* -------------------- fonts -------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat')
+
+/* ------------------- reset CSS -----------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+
+/* ------------------- general -----------------------*/
+
+body
+    font: 16px $font
+
+
+/* ------------------- header -----------------------*/
+
+.header
+    width: 100%
+    height: 100vh
+    background: url('../img/background.jpg') center center/ 100% 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-content: space-around
+    button
+        display: none
+
+.nav
+    order: 2
+    flex: 0 1 auto
+    text-align: right
+    margin-right: 10%
+    
+.menu__item
+    display: inline-block
+    
+.menu__link
+    @extend .navLink  
+	
+.responsive__menu
+	display: none
+        
+.logo 
+    order: 1
+    flex: 0 1 100px
+    +size(100px,100px) 
+    margin-left: 10%
+    
+.slogan
+    order: 3
+    text-align: center
+    width: 100%
+    h1
+        font: bold 8rem $font
+        color: #fff
+        -webkit-text-fill-color: transparent
+        -webkit-background-clip: text
+        background-image: url('../img/second.jpg')
+        background-origin content-box
+    .slogan_IE
+        display: none
+        width: 80%
+        margin: 0 auto
+        
+
+.tip 
+    order: 4
+    flex: 0 1 auto
+    align-self: flex-end
+    margin: 0 auto
+    text-align: center
+    font-size: 14px
+    color: $white
+
+/* ----------------------- main ------------------------- */
+
+.main
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    align-items: stretch
+        
+.main__introduction
+    flex: 0 1 33.9% 
+    color: $blue
+    background-color: #18f7ef
+    h1
+        font: bold 50px $font
+        padding: 60px 0 60px 50px
+        width: 33%
+        color: $white
+        span
+            color: $blue
+    p
+        padding: 0 50px 50px 50px
+        font-size: 20px
+    .main__button
+        @extend .button
+        color: $blue
+        background: #18f7ef
+        margin: 0 0 50px 50px
+        &:hover
+            background: $white
+            color: #18f7ef
+            
+            
+    
+.main__gallery
+    flex: 0 1 66.1% 
+    display: flex
+    flex-wrap: wrap
+    align-items: stretch
+    
+.gallery__picture--one
+    flex: 0 1 50%
+    background: url('../img/photo.jpg') center/100% 100%
+    
+.gallery__picture--two
+    flex: 0 1 50%
+    background: url('../img/second.jpg') center/100% 100%
+    
+.gallery__picture--three
+    flex: 0 1 100%
+    background: url('../img/third.jpg') center/100% 100%
+    
+/* ----------------------- photographer ------------------------- */
+
+.container
+    display: flex
+    width: 100%
+    
+.boxOne
+    flex: 0 1 33.9%
+    position: relative
+    min-height: 1px;
+    .boxOne__item
+        img
+            +size(80%,auto)
+            display: block
+            position: absolute
+            left: 40%
+            bottom: 0
+         
+.boxTwo
+    flex: 0 1 66.1%
+    background-color: #3624ea
+    text-align: left
+    color: $white
+    h2
+        padding: 10% 0 5% 10%
+        font: bold 40px $font
+    p
+        font-size: 16px
+        width: 80%
+        padding: 0 0 5% 10%
+    .boxTwo__button
+        @extend .button
+        margin: 0 0 10% 10%
+        color: $white
+        background: #3624ea
+        &:hover
+            color: $blue
+            background: $white
+        
+        
+/* ----------------------- footer ------------------------- */    
+
+.footer
+    display: flex
+    flex-direction: column
+    background: url('../img/footerbg.jpg') center center/ 100% 100%
+
+.fooer__text
+    padding: 100px 0 50px
+    color: $white
+    justify-content: center
+    display: flex
+    h2
+        font: bold 40px $font
+        flex: 0 1 45%
+        text-align: left
+        padding: 0 20px
+    p
+        font-size: 16px
+        flex: 0 1 45%
+        text-align: left
+        padding: 0 20px
+        
+.footer__logo
+    margin: 400px auto 100px
+    text-align: center
+    p
+        padding: 20px 0
+        margin: 0 auto
+        font-size: 16px
+        color: $white
+        width: 400px
+        text-align: center
+        
+.footer__nav
+    margin-bottom: 100px 
+    text-align: center
+    
+.menuBottom__item
+    display: inline-block
+    
+.menuBottom__link
+    @extend .navLink
+
+
+/* ----------------------- footer ------------------------- */ 
+/* ---------------------- media queris -------------------- */
+
+@media all and (max-width: 991px)
+    
+    .header
+        background: url('../img/MINbackground.jpg') center center/ cover
+    
+    .gallery__picture--one
+        background: url('../img/MINphoto.jpg') center/cover
+
+    .gallery__picture--two
+        background: url('../img/MINsecond.jpg') center/cover
+
+    .gallery__picture--three
+        background: url('../img/MINthird.jpg') center/cover
+    
+    .footer
+        background: url('../img/MINfooterbg.jpg') center center/ cover
+
+@media all and (max-width: 767px)
+
+    .main
+        flex-direction: column
+        flex-wrap: nowrap
+          
+    .main__introduction
+        flex: 0 1 auto
+        h1  
+            padding: 30px 0
+            margin: 0 auto
+            text-align: center
+        p
+            padding: 40px 10px
+            text-align: center
+        .main__button
+            margin: 15px auto
+        
+
+    .main__gallery
+        flex: 0 1 auto
+        display: flex
+        align-items: center
+    
+    .gallery__picture
+        +size(100%,200px)
+        
+    .gallery__picture--one
+        width: 50%
+
+    .gallery__picture--two
+        width: 50%
+
+    .gallery__picture--three
+        width: 100%
+        
+    .container
+        +size(100%,auto)
+        flex-direction: column
+        
+    .boxOne
+        flex: 0 1 auto
+        margin: 0 auto
+        position: static
+        .boxOne__item
+            margin: 0 auto
+            img
+                +size(100%,auto)
+                position: static
+
+    .boxTwo
+        flex: 0 1 auto
+        width: 100%
+        text-align: center
+        h2
+            padding: 15px 10px
+            font: bold 40px $font
+            width: 80%
+            margin: 0 auto
+        p
+            font-size: 16px
+            width: 80%
+            margin: 0 auto
+            padding: 15px 10px
+        .boxTwo__button
+            margin: 15px auto
+            
+    .footer
+            display: flex
+            flex-direction: column
+            background: url('../img/MINfooterbg.jpg') center center/ cover
+        
+
+    .fooer__text
+        padding: 30px 0 10px
+        h2
+            width: auto
+            display: block
+            text-align: center
+            padding: 15px 10px
+        p
+            font-size: 16px
+            width: auto
+            display: block
+            text-align: center
+            padding: 15px 10px
+
+    .footer__logo
+        margin: 50px auto 20px
+        text-align: center
+        p
+            padding: 15px auto
+            font-size: 16px
+            color: $white
+            width: 200px
+
+        .footer__nav
+            margin-bottom: 20px
+
+
+@media all and (max-width: 575px)
+
+	.header
+		margin-top: 50px
+		height: auto
+		flex-direction: column
+		justify-content: center
+		flex-wrap: nowrap
+		button
+			display: block
+			position: absolute
+			right: 0
+			border: none
+			outline: none
+			top: 0
+			background: #000
+			color: $white
+			+size(100%, 50px)
+			i
+				font-size: 30px
+				
+	.nav
+		display: none
+        
+	.slogan
+		h1
+			font-size: 4rem
+			padding: 0 20px
+			
+	.responsive__menu
+		text-align: center
+		margin: 0
+		order: 1
+		width: 100%
+
+
+	.responsive__item
+		text-align: center
+		display: block
+		width: 100%
+		background: rgba(255,255,255,.3)
+		border: 1px solid $white
+
+	.responsive__link
+		text-decoration: none
+		font: 700 18px/80px $font
+		color: $white
+    	margin: 0 10px
+		width: 100%
+       
+	.logo 
+		align-self: flex-start
+		+size(75px,75px) 
+		margin: 30px auto 15px 
+    
+	.slogan
+		order: 2
+		flex-shrink: 0
+		margin: 10px auto
+		img
+			width: 95%
+
+	.tip 
+		display: none
+
+	.main__gallery
+		+size(100%,750px)
+		flex-direction: column
+		flex-wrap: nowrap
+        
+	.gallery__picture
+		flex: 0 1 100%
+		+size(100%,250px)
+        
+	.fooer__text
+		flex-direction: column
+		padding: 0 15px
+		margin: 20px 0
+		h2
+			flex: 0 1 auto
+			padding: 0
+		p
+			font-size: 16px
+			flex: 0 1 auto
+           
+	.footer__logo
+		margin: 15px auto
+		text-align: center
+		p
+			margin: 0 auto
+			padding: 15px 10px
+
+	.footer__nav
+		margin-bottom: 16px
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) 
+    
+	.slogan
+		h1
+			display: none
+		.slogan_IE
+			display: block
+
+    
+
+    

@@ -1,0 +1,414 @@
+/* ----------------------------SASS---------------------/* */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.button, .main__introduction .main__button, .boxTwo .boxTwo__button {
+  display: block;
+  margin-left: 50px;
+  padding: 10px;
+  font: 18px Montserrat, Helvetica, sans-serif;
+  border: 2px #fff solid;
+  cursor: pointer; }
+
+.navLink, .menu__link, .menuBottom__link {
+  text-decoration: none;
+  font: 700 18px/80px Montserrat, Helvetica, sans-serif;
+  color: #fff;
+  margin: 0 10px;
+  cursor: pointer; }
+  .navLink:hover, .menu__link:hover, .menuBottom__link:hover {
+    color: #18f7ef; }
+
+/* -------------------- fonts -------------------------*/
+/* ------------------- reset CSS -----------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* ------------------- general -----------------------*/
+body {
+  font: 16px Montserrat, Helvetica, sans-serif; }
+
+/* ------------------- header -----------------------*/
+.header {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/background.jpg") center center/100% 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around; }
+  .header button {
+    display: none; }
+
+.nav {
+  order: 2;
+  flex: 0 1 auto;
+  text-align: right;
+  margin-right: 10%; }
+
+.menu__item {
+  display: inline-block; }
+
+.responsive__menu {
+  display: none; }
+
+.logo {
+  order: 1;
+  flex: 0 1 100px;
+  width: 100px;
+  height: 100px;
+  margin-left: 10%; }
+
+.slogan {
+  order: 3;
+  text-align: center;
+  width: 100%; }
+  .slogan h1 {
+    font: bold 8rem Montserrat, Helvetica, sans-serif;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("../img/second.jpg"); }
+  .slogan .slogan_IE {
+    display: none;
+    width: 80%;
+    margin: 0 auto; }
+
+.tip {
+  order: 4;
+  flex: 0 1 auto;
+  align-self: flex-end;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  color: #fff; }
+
+/* ----------------------- main ------------------------- */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch; }
+
+.main__introduction {
+  flex: 0 1 33.9%;
+  color: #3624ea;
+  background-color: #18f7ef; }
+  .main__introduction h1 {
+    font: bold 50px Montserrat, Helvetica, sans-serif;
+    padding: 60px 0 60px 50px;
+    width: 33%;
+    color: #fff; }
+    .main__introduction h1 span {
+      color: #3624ea; }
+  .main__introduction p {
+    padding: 0 50px 50px 50px;
+    font-size: 20px; }
+  .main__introduction .main__button {
+    color: #3624ea;
+    background: #18f7ef;
+    margin: 0 0 50px 50px; }
+    .main__introduction .main__button:hover {
+      background: #fff;
+      color: #18f7ef; }
+
+.main__gallery {
+  flex: 0 1 66.1%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; }
+
+.gallery__picture--one {
+  flex: 0 1 50%;
+  background: url("../img/photo.jpg") center/100% 100%; }
+
+.gallery__picture--two {
+  flex: 0 1 50%;
+  background: url("../img/second.jpg") center/100% 100%; }
+
+.gallery__picture--three {
+  flex: 0 1 100%;
+  background: url("../img/third.jpg") center/100% 100%; }
+
+/* ----------------------- photographer ------------------------- */
+.container {
+  display: flex;
+  width: 100%; }
+
+.boxOne {
+  flex: 0 1 33.9%;
+  position: relative;
+  min-height: 1px; }
+  .boxOne .boxOne__item img {
+    width: 80%;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 40%;
+    bottom: 0; }
+
+.boxTwo {
+  flex: 0 1 66.1%;
+  background-color: #3624ea;
+  text-align: left;
+  color: #fff; }
+  .boxTwo h2 {
+    padding: 10% 0 5% 10%;
+    font: bold 40px Montserrat, Helvetica, sans-serif; }
+  .boxTwo p {
+    font-size: 16px;
+    width: 80%;
+    padding: 0 0 5% 10%; }
+  .boxTwo .boxTwo__button {
+    margin: 0 0 10% 10%;
+    color: #fff;
+    background: #3624ea; }
+    .boxTwo .boxTwo__button:hover {
+      color: #3624ea;
+      background: #fff; }
+
+/* ----------------------- footer ------------------------- */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: url("../img/footerbg.jpg") center center/100% 100%; }
+
+.fooer__text {
+  padding: 100px 0 50px;
+  color: #fff;
+  justify-content: center;
+  display: flex; }
+  .fooer__text h2 {
+    font: bold 40px Montserrat, Helvetica, sans-serif;
+    flex: 0 1 45%;
+    text-align: left;
+    padding: 0 20px; }
+  .fooer__text p {
+    font-size: 16px;
+    flex: 0 1 45%;
+    text-align: left;
+    padding: 0 20px; }
+
+.footer__logo {
+  margin: 400px auto 100px;
+  text-align: center; }
+  .footer__logo p {
+    padding: 20px 0;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #fff;
+    width: 400px;
+    text-align: center; }
+
+.footer__nav {
+  margin-bottom: 100px;
+  text-align: center; }
+
+.menuBottom__item {
+  display: inline-block; }
+
+/* ----------------------- footer ------------------------- */
+/* ---------------------- media queris -------------------- */
+@media all and (max-width: 991px) {
+  .header {
+    background: url("../img/MINbackground.jpg") center center/cover; }
+  .gallery__picture--one {
+    background: url("../img/MINphoto.jpg") center/cover; }
+  .gallery__picture--two {
+    background: url("../img/MINsecond.jpg") center/cover; }
+  .gallery__picture--three {
+    background: url("../img/MINthird.jpg") center/cover; }
+  .footer {
+    background: url("../img/MINfooterbg.jpg") center center/cover; } }
+
+@media all and (max-width: 767px) {
+  .main {
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .main__introduction {
+    flex: 0 1 auto; }
+    .main__introduction h1 {
+      padding: 30px 0;
+      margin: 0 auto;
+      text-align: center; }
+    .main__introduction p {
+      padding: 40px 10px;
+      text-align: center; }
+    .main__introduction .main__button {
+      margin: 15px auto; }
+  .main__gallery {
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center; }
+  .gallery__picture {
+    width: 100%;
+    height: 200px; }
+  .gallery__picture--one {
+    width: 50%; }
+  .gallery__picture--two {
+    width: 50%; }
+  .gallery__picture--three {
+    width: 100%; }
+  .container {
+    width: 100%;
+    height: auto;
+    flex-direction: column; }
+  .boxOne {
+    flex: 0 1 auto;
+    margin: 0 auto;
+    position: static; }
+    .boxOne .boxOne__item {
+      margin: 0 auto; }
+      .boxOne .boxOne__item img {
+        width: 100%;
+        height: auto;
+        position: static; }
+  .boxTwo {
+    flex: 0 1 auto;
+    width: 100%;
+    text-align: center; }
+    .boxTwo h2 {
+      padding: 15px 10px;
+      font: bold 40px Montserrat, Helvetica, sans-serif;
+      width: 80%;
+      margin: 0 auto; }
+    .boxTwo p {
+      font-size: 16px;
+      width: 80%;
+      margin: 0 auto;
+      padding: 15px 10px; }
+    .boxTwo .boxTwo__button {
+      margin: 15px auto; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background: url("../img/MINfooterbg.jpg") center center/cover; }
+  .fooer__text {
+    padding: 30px 0 10px; }
+    .fooer__text h2 {
+      width: auto;
+      display: block;
+      text-align: center;
+      padding: 15px 10px; }
+    .fooer__text p {
+      font-size: 16px;
+      width: auto;
+      display: block;
+      text-align: center;
+      padding: 15px 10px; }
+  .footer__logo {
+    margin: 50px auto 20px;
+    text-align: center; }
+    .footer__logo p {
+      padding: 15px auto;
+      font-size: 16px;
+      color: #fff;
+      width: 200px; }
+    .footer__logo .footer__nav {
+      margin-bottom: 20px; } }
+
+@media all and (max-width: 575px) {
+  .header {
+    margin-top: 50px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap; }
+    .header button {
+      display: block;
+      position: absolute;
+      right: 0;
+      border: none;
+      outline: none;
+      top: 0;
+      background: #000;
+      color: #fff;
+      width: 100%;
+      height: 50px; }
+      .header button i {
+        font-size: 30px; }
+  .nav {
+    display: none; }
+  .slogan h1 {
+    font-size: 4rem;
+    padding: 0 20px; }
+  .responsive__menu {
+    text-align: center;
+    margin: 0;
+    order: 1;
+    width: 100%; }
+  .responsive__item {
+    text-align: center;
+    display: block;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff; }
+  .responsive__link {
+    text-decoration: none;
+    font: 700 18px/80px Montserrat, Helvetica, sans-serif;
+    color: #fff;
+      color-margin: 0 10px;
+    width: 100%; }
+  .logo {
+    align-self: flex-start;
+    width: 75px;
+    height: 75px;
+    margin: 30px auto 15px; }
+  .slogan {
+    order: 2;
+    flex-shrink: 0;
+    margin: 10px auto; }
+    .slogan img {
+      width: 95%; }
+  .tip {
+    display: none; }
+  .main__gallery {
+    width: 100%;
+    height: 750px;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .gallery__picture {
+    flex: 0 1 100%;
+    width: 100%;
+    height: 250px; }
+  .fooer__text {
+    flex-direction: column;
+    padding: 0 15px;
+    margin: 20px 0; }
+    .fooer__text h2 {
+      flex: 0 1 auto;
+      padding: 0; }
+    .fooer__text p {
+      font-size: 16px;
+      flex: 0 1 auto; }
+  .footer__logo {
+    margin: 15px auto;
+    text-align: center; }
+    .footer__logo p {
+      margin: 0 auto;
+      padding: 15px 10px; }
+  .footer__nav {
+    margin-bottom: 16px; } }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .slogan h1 {
+    display: none; }
+  .slogan .slogan_IE {
+    display: block; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="description" content="Flexbox, portfolio, CSS, HTML5, RWD, Block Element Modifier">
+    <meta name="author" content="Piotr Jalocha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--------------------------------- header ------------------------------------------------------------------>
+    <header class="header">
+		<button id="btn-hamburger"><i class="ion-navicon-round" id="menu__icon"></i></button>
+		<nav class="responsive__menu">
+			<ul>
+                <li class="responsive__item"><a href="#" target="_blank" class="responsive__link">work</a></li>
+                <li class="responsive__item"><a href="#" target="_blank" class="responsive__link">about me</a></li>
+                <li class="responsive__item"><a href="#" target="_blank" class="responsive__link">news</a></li>
+                <li class="responsive__item"><a href="#" target="_blank" class="responsive__link">contact</a></li>
+            </ul>
+		</nav>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__item"><a href="#" target="_blank" class="menu__link">work</a></li>
+                <li class="menu__item"><a href="#" target="_blank" class="menu__link">about me</a></li>
+                <li class="menu__item"><a href="#" target="_blank" class="menu__link">news</a></li>
+                <li class="menu__item"><a href="#" target="_blank" class="menu__link">contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="slogan">
+            <img src="img/text.png" alt="Slice of my life" class="slogan_IE">
+            <h1>Slice of my life.</h1>
+        </div>
+        <div class="tip">
+            <img src="img/mouse.png" alt="computer mouse" class="header__tip__picture">
+            <p>scroll to see more</p>
+        </div>
+    </header>
+<!--------------------------------- main ------------------------------------------------------------------>
+    <main class="main">
+        <div class="main__introduction">
+            <h1>Hello I am <span>John</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas erat vel odio consequat, eu consectetur ligula lacinia. Quisque sodales a urna id iaculis. Cras facilisis lorem posuere, consectetur massa et, egestas enim.</p>
+            <button class="main__button">CONTACT WITH ME</button>
+        </div>
+        <div class="main__gallery">
+            <div class="gallery__picture gallery__picture--one"></div>
+            <div class="gallery__picture gallery__picture--two"></div>
+            <div class="gallery__picture gallery__picture--three"></div>
+        </div>
+    </main>
+<!--------------------------------- photographer ------------------------------------------------------------------>
+    <div class="container">
+        <div class="boxOne">
+            <figure class="boxOne__item">
+                <img src="img/photographer.png" alt="picture of photographer">
+            </figure>
+        </div>
+        <div class="boxTwo">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas erat vel odio consequat, eu consectetur ligula lacinia. </p>
+            <button class="boxTwo__button">VIEW CASE STUDY</button>
+        </div>
+    </div>
+<!--------------------------------- footer ------------------------------------------------------------------>
+    <footer class="footer">
+        <div class="fooer__text">
+            <h2>A good photographer is knowing where to stand</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et est erat. In vestibulum eget nisi sed sagittis. Sed sed vulputate lacus. Pellentesque at tincidunt dui, id placerat leo. Ut porta facilissis augue et interdum. Donec turpis massa, euismod vel egestas quis, porttitor sit amet metus. Mauris condimentum suscipit cursus.</p>
+        </div>
+        <div class="footer__logo">
+            <figure>
+                <img src="img/logo.png" alt="logo">
+            </figure>
+            <p>All rights reserved by Eos Free PSD Template by symu. Check our site www.symu.co for more goods</p>
+        </div>
+        <div class="footer__nav">
+            <nav class="navBottom">
+                <ul class="menuBottom">
+                    <li class="menuBottom__item"><a href="#" target="_blank" class="menuBottom__link">work</a></li>
+                    <li class="menuBottom__item"><a href="#" target="_blank" class="menuBottom__link">about me</a></li>
+                    <li class="menuBottom__item"><a href="#" target="_blank" class="menuBottom__link">news</a></li>
+                    <li class="menuBottom__item"><a href="#" target="_blank" class="menuBottom__link">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
